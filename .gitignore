@@ -1,0 +1,23 @@
+.idea
+node_modules
+
+.env
+*.alt
+*.DS_Store
+*dw.json
+!example.dw.json
+!project.dw.json
+*.zip
+*.code-workspace
+.metadata
+.vscode
+.bundle-analyzer
+.gitattributes
+
+# Ignore Static Files
+/**/static/**/js
+/**/static/**/css
+
+dw-api-types-master
+.ignore
+jsconfig.json

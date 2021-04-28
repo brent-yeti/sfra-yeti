@@ -1,0 +1,6 @@
+{
+  "dataFor": ["app_storefront_base","link_adyen","app_yeti_core"],
+  "dataIgnore": ["site_demo/**"],
+  "dataFinal": "attribute_groups",
+  "dataAll":  false
+}

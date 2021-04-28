@@ -1,0 +1,28 @@
+{
+	"name": "yeti-build",
+	"version": "1.0.0",
+	"engines": {
+		"node": ">=10.0 <12.0",
+		"npm": ">=6.0"
+	},
+	"scripts": {
+		"npmInstall": "cd sfra-webpack-builder && npm i && npm run npmInstall",
+		"dev:clean": "del-cli '**/static/default/css/**/*.css' --dry-run && del-cli '**/static/default/js/**/*.js' --dry-run",
+		"dev:build": "npm run npmInstall && npm run dev:compile",
+		"dev:compile": "cd sfra-webpack-builder && npm run dev && cd ../storefront-reference-architecture && npm run compile:fonts",
+		"prod:build": "npm run npmInstall && npm run prod:compile",
+		"prod:compile": "cd sfra-webpack-builder && npm run prod && cd ../storefront-reference-architecture && npm run compile:fonts",
+		"watch": "cd sfra-webpack-builder && npm run watch",
+		"data:initialize": "autobahn-cli import --initialize",
+		"data:update": "autobahn-cli import",
+		"yeti:initialize": "autobahn-cli import --data-for yeti_data --initialize",
+		"yeti:update": "autobahn-cli import --data-for yeti_data"
+	},
+	"dependencies": {
+		"@redvanworkshop/autobahn-cli": "^1.4.0",
+		"npm": "^6.11.3"
+	},
+	"devDependencies": {
+		"del-cli": "^3.0.1"
+	}
+}

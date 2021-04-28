@@ -1,0 +1,10 @@
+{
+  "hostname": "bgdt-xxx.sandbox.us01.dx.commercecloud.salesforce.com",
+  "username": "your.name@yeti.com",
+  "password": "somepassword",
+  "code-version": "version1",
+  "clientId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "clientSecret": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "dataFor": ["app_storefront_base","yeti_site"],
+  "dataFinal": "attribute_groups"
+}
